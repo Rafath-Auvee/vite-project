@@ -7,7 +7,7 @@ export interface Item {
 export default class ListItem implements Item {
   constructor(
     private _id: string = "",
-    private _Item: string = "",
+    private _item: string = "",
     private _checked: boolean = false
   ) {}
 
@@ -15,27 +15,23 @@ export default class ListItem implements Item {
     return this._id;
   }
 
-  set_id(id: string) {
+  set id(id: string) {
     this._id = id;
   }
 
-
-
-  get Item(): string {
-    return this._Item;
+  get item(): string {
+    return this._item;
   }
 
-  set_Item(Item: string) {
-    this._Item = Item;
+  set item(item: string) {
+    this._item = item;
   }
-
-  
 
   get checked(): boolean {
     return this._checked;
   }
 
-  set_checked(checked: boolean) {
+  set checked(checked: boolean) {
     this._checked = checked;
   }
 }
